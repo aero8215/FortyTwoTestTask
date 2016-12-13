@@ -1,9 +1,10 @@
-from django.test import TestCase
+from django.test import TestCase, Client
+from django.core.urlresolvers import reverse
 
-# Create your tests here.
 
-
-class SomeTests(TestCase):
-    def test_math(self):
-        "put docstrings in your tests"
-        assert(2 + 2 == 4)
+class ViewsTests(TestCase):
+    def test_index(self):
+        client = Client()
+        response = client.get(reverse('index'))
+        self.assertContains(response,"Clara")
+        self.assertContains(response, "Contacts")
