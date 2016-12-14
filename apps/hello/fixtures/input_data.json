@@ -1,0 +1,15 @@
+[
+  {
+    "model": "hello.information",
+    "pk": 1,
+    "fields": {
+      "first_name": "Clara",
+      "last_name": "Ferrando",
+      "skype": "claramferrando",
+      "jabber": "clarafx",
+      "bio": "bla bla bla",
+      "birth_date": "1969-11-07"
+    }
+  }
+
+]

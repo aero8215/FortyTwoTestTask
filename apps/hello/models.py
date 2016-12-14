@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class PersonalData(models.Model):
+class Information(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     email = models.EmailField()

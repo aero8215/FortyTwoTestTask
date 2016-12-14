@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    #'south',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -93,6 +94,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'uploads')
 MEDIA_URL = '/uploads/'
 
 
+# Fixture Directories
+FIXTURE_DIRS = (
+    os.path.join(BASE_DIR, 'apps/hello/fixtures'),
+)
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
@@ -104,6 +111,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
+
 
 STATIC_URL = '/static/'
 
