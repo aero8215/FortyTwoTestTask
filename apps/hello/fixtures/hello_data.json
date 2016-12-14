@@ -1,14 +1,16 @@
 [
   {
-    "model": "hello.information",
     "pk": 1,
+    "model": "hello.information",
     "fields": {
-      "first_name": "Clara",
-      "last_name": "Ferrando",
-      "skype": "claramferrando",
-      "jabber": "clarafx",
-      "bio": "bla bla bla",
-      "birth_date": "1969-11-07"
+        "bio": "Born in a small town in Argentina. Studied Electronics Engineering at Universidad de Buenos Aires and pursued M.S. at Georgia Tech. Worked in telecommunications (satellite) and embedded software. Problem solver at heart. Interests: music (jazz), photography, biking, books. Family: married, proud mother of two girls :)",
+        "first_name": "Clara",
+        "last_name": "Ferrando",
+        "jabber": "clarafx",
+        "skype": "claramferrando",
+        "birth_date": "2000-01-12T15:32:13Z",
+        "other_contacts": "Cell phone: +54-911-5653-5277\r\n\r\nTwitter: chisoft",
+        "email": "clara.ferrando@gmail.com"
     }
   }
 
