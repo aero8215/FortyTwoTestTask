@@ -27,6 +27,7 @@ def page_not_found(request):
     response.status_code = 400
     return response
 
+
 def bad_request(request):
     response = render_to_response(
         '500.html',
