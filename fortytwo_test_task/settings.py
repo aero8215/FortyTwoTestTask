@@ -30,7 +30,7 @@ DEBUG = False
 TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'getbarista.com',
-                 'http://fortytwotesttask-458.aero8215.at.getbarista.com']
+                 'fortytwotesttask-458.aero8215.at.getbarista.com']
 
 
 # Application definition
