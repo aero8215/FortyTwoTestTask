@@ -13,4 +13,3 @@ class Information(models.Model):
 
     def __str__(self):
         return ' '.join([self.first_name, self.last_name])
-

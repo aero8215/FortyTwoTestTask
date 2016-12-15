@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-from south.utils import datetime_utils as datetime
-from south.db import db
 from south.v2 import DataMigration
-from django.db import models
+
 
 class Migration(DataMigration):
 
@@ -20,13 +18,20 @@ class Migration(DataMigration):
             'Meta': {'object_name': 'Information'},
             'bio': ('django.db.models.fields.TextField', [], {}),
             'birth_date': ('django.db.models.fields.DateTimeField', [], {}),
-            'email': ('django.db.models.fields.EmailField', [], {'max_length': '75'}),
-            'first_name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
-            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'jabber': ('django.db.models.fields.CharField', [], {'max_length': '30'}),
-            'last_name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
-            'other_contacts': ('django.db.models.fields.TextField', [], {}),
-            'skype': ('django.db.models.fields.CharField', [], {'max_length': '30'})
+            'email': ('django.db.models.fields.EmailField',
+                      [], {'max_length': '75'}),
+            'first_name': ('django.db.models.fields.CharField',
+                           [], {'max_length': '50'}),
+            u'id': ('django.db.models.fields.AutoField',
+                    [], {'primary_key': 'True'}),
+            'jabber': ('django.db.models.fields.CharField',
+                       [], {'max_length': '30'}),
+            'last_name': ('django.db.models.fields.CharField',
+                          [], {'max_length': '50'}),
+            'other_contacts': ('django.db.models.fields.TextField',
+                               [], {}),
+            'skype': ('django.db.models.fields.CharField',
+                      [], {'max_length': '30'})
         }
     }
 
