@@ -1,5 +1,6 @@
 # Create your views here.
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
+from django.template import RequestContext
 from apps.hello.models import Information
 
 
@@ -16,3 +17,20 @@ def index(request):
         context['other_contacts'] = \
             data.other_contacts.replace('\r\n\r\n', '<br>')
     return render(request, 'index.html', context)
+
+
+def page_not_found(request):
+    response = render_to_response(
+        '400.html',
+        context_instance=RequestContext(request)
+    )
+    response.status_code = 400
+    return response
+
+def bad_request(request):
+    response = render_to_response(
+        '500.html',
+        context_instance=RequestContext(request)
+    )
+    response.status_code = 500
+    return response
