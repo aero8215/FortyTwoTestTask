@@ -1,0 +1,23 @@
+{%	extends	'base.html' %}
+{%	block	content	%}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+        <h3>{{ first_name }}</h3>
+        <h3>{{ last_name }} </h3>
+        <h3>{{ birth_date }} </h3>
+        <h3>Bio: </h3>
+        <p>{{ bio }}</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Contacts</h3>
+        <h4>Skype: {{ skype }}</h4>
+        <h4>Jabber: {{ jabber }}</h4>
+        <h4><u>Other contacts: </u></h4>
+        <h4> {{ other_contacts|safe }} </h4>
+    </div>
+  </div>
+</div>
+
+{%	endblock	%}

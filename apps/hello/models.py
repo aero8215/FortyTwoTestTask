@@ -9,7 +9,7 @@ class Information(models.Model):
     skype = models.CharField(max_length=30)
     other_contacts = models.TextField()
     bio = models.TextField()
-    birth_date = models.DateField()
+    birth_date = models.DateTimeField()
 
     def __str__(self):
         return ' '.join([self.first_name, self.last_name])

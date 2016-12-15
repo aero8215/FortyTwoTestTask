@@ -113,14 +113,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 
-STATIC_URL = '/static/'
+STATIC_URL = '/assets/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(BASE_DIR, 'assets'),
+    os.path.join(PROJECT_DIR, 'assets'),
 )
 
 
@@ -130,7 +130,7 @@ TEMPLATE_DIRS = (
     # "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(BASE_DIR, 'templates'),
+    os.path.join(PROJECT_DIR, 'templates'),
 )
 
 # Turn off south during test
