@@ -1,6 +1,5 @@
 # Create your views here.
-from django.shortcuts import render, render_to_response
-from django.template import RequestContext
+from django.shortcuts import render
 from apps.hello.models import Information
 
 
